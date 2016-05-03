@@ -8,4 +8,4 @@ php -S localhost:8000
 
 ```
 
-Thaks to visit my github
+Thanks to visit my github
