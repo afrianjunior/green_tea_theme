@@ -4,7 +4,7 @@ html,
 body
 {
 	font-family: "Merriweather", cursive;
-	height: 100%;
+	height:100vh;
 }
 
 /**
@@ -15,11 +15,70 @@ body
 .head_frame
 {
 	position:relative;
-	background:url('/img/header.jpg');
+	background:url('/img/header.jpg') fixed;
 	background-position:center;
 	background-size: cover;
 	height:100%;
 	width:100%;
+}
+
+/**
+* HEAD FRAME BLOG
+* ---------------------------------------------------------------
+*/
+
+.head_frame_blogs
+{
+	position:relative;
+	background: url('/img/header.jpg') fixed;
+	background-position:center;
+	background-size:cover;
+	height:60%;
+	width:100%;
+}
+
+/**
+* DETAIL POST
+* ---------------------------------------------------------------
+*/
+
+.detail_post
+{
+	margin-bottom:10%; 
+}
+
+.post_title
+{
+	margin-bottom:20px; 
+}
+
+.post_shape
+{
+	margin-bottom:20px;
+}
+
+.post_shape .post_date
+{
+	border:2px solid #18BC9C;
+	padding:10px;
+	margin-right:10px; 
+}
+
+.post_shape .post_user
+{
+	border:2px solid #18BC9C;
+	padding:10px;
+	margin-right:10px; 
+}
+
+.post_image
+{
+	margin-bottom:10px;
+}
+
+.post_content
+{
+	padding:10px; 
 }
 
 /**
@@ -33,6 +92,12 @@ body
 	text-align:center;
 }
 
+.headline_content_blogs
+{
+	padding-top:10em;
+	text-align:left;
+}
+
 .headline_heading
 {
 	font-size:2em;
@@ -41,6 +106,7 @@ body
 
 .headline_desc
 {
+	clear:both;
 	font-size:1em; 
 	color:#fff;
 }
@@ -50,6 +116,14 @@ body
 	width:8em;
 	height:.2em;
 	background-color:#fff;  
+}
+
+.headline_hr_blogs
+{
+	width:8em;
+	height:.2em;
+	background-color:#fff;
+	float:left;  
 }
 
 @media (min-width: 768px){
@@ -64,6 +138,19 @@ body
 		font-size:1.5em;
 	}
 
+}
+
+/**
+* CATEGORY
+* ---------------------------------------------------------------
+*/
+
+.category_text
+{
+	color:#fff;
+	border:2px solid #18BC9C;
+	font-size:1em; 
+	padding:.5em; 
 }
 
 /**
@@ -96,15 +183,30 @@ body
 	color:#000;
 }
 
-.navbar.navbar-green .nav.navbar-nav.green a
+.navbar.navbar-green .nav.navbar-nav.green > li > a
 {
 	color:#fff; 
 }
 
-.navbar.navbar-green .nav.navbar-nav.green a:hover
+.navbar.navbar-green .nav.navbar-nav.green > li > a:hover
 {
 	background-color:transparent; 
 	color:#000; 
+}
+
+.navbar.navbar-green .nav.navbar-nav.green > li > a:active
+{
+	background-color:transparent; 
+}
+
+.navbar.navbar-green .nav.navbar-nav.green > li > a:visited
+{
+	background-color:transparent; 
+}
+
+.navbar.navbar-green .nav.navbar-nav.green > li > a:focus
+{
+	background-color:transparent; 
 }
 
 /**
@@ -148,6 +250,12 @@ body
 {
 	position:relative;
 	margin-bottom:10%; 
+	transition:all .1s ease; 
+}
+
+.article_frame:hover
+{
+	transform:scale(1.1); 
 }
 
 .article_user
@@ -211,8 +319,22 @@ footer
 
 .foot_site p
 {
-	text-align:center;
+	text-align:left;
 }
 
+.foot_site .red
+{
+	color:#f00;
+}
 
+ul.foot_social 
+{
+	list-style-type:none;
+	font-size:1.3em;
+	padding-left:0;  
+}
 
+ul.foot_social>li>a
+{
+	color:#18BC9C; 
+}
