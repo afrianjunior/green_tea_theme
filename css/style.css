@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+html,
+body
+{
+	font-family: "Merriweather", cursive;
+	height: 100%;
+}
+
+/**
+* HEAD FRAME
+* ---------------------------------------------------------------
+*/
+
+.head_frame
+{
+	position:relative;
+	background:url('/img/header.jpg');
+	background-position:center;
+	background-size: cover;
+	height:100%;
+	width:100%;
+}
+
+/**
+* HEADLINE
+* ---------------------------------------------------------------
+*/
+
+.headline_content
+{
+	padding-top:20em;
+	text-align:center;
+}
+
+.headline_heading
+{
+	font-size:2em;
+	color:#fff;
+}
+
+.headline_desc
+{
+	font-size:1em; 
+	color:#fff;
+}
+
+.headline_hr
+{
+	width:8em;
+	height:.2em;
+	background-color:#fff;  
+}
+
+@media (min-width: 768px){
+	
+	.headline_heading
+	{
+		font-size:4em;
+	}
+
+	.headline_desc
+	{
+		font-size:1.5em;
+	}
+
+}
+
+/**
+* NAVBAR GREEN
+* ---------------------------------------------------------------
+*/
+
+.navbar.navbar-green
+{
+	background-color:#18BC9C; 
+}
+
+.navbar.navbar-green .navbar-toggle
+{
+	background-color:#fff;
+}
+
+.navbar.navbar-green .navbar-toggle .icon-bar
+{
+	background-color:#18BC9C;
+}
+
+.navbar.navbar-green .navbar-brand
+{
+	color:#fff;
+}
+
+.navbar.navbar-green .navbar-brand:hover
+{
+	color:#000;
+}
+
+.navbar.navbar-green .nav.navbar-nav.green a
+{
+	color:#fff; 
+}
+
+.navbar.navbar-green .nav.navbar-nav.green a:hover
+{
+	background-color:transparent; 
+	color:#000; 
+}
+
+/**
+* TITLE HEAD
+* ---------------------------------------------------------------
+*/
+
+.title_head
+{
+	font-size:2em;
+	text-align:center;
+	margin-top:60px;  
+}
+
+.title_hr
+{
+	margin-left:0 auto;
+	margin-right:0 auto;
+	background-color:#18BC9C;
+	height:.2em;
+	width:6em;
+	margin-bottom:50px;
+	margin-top:40px;     
+}
+
+@media (min-width:768px){
+
+	.title_head
+	{
+		font-size:3em;
+	}
+
+}
+
+/**
+* ARTICLE
+* ---------------------------------------------------------------
+*/
+
+.article_frame
+{
+	position:relative;
+	margin-bottom:10%; 
+}
+
+.article_user
+{
+	position:absolute;
+	color:#fff;
+	top:0;
+	margin-left:10px;	
+	margin-top:10px;
+	border-bottom:2px solid #fff;  
+}
+
+.article_date
+{
+	position:absolute;
+	color:#fff;
+	top:50%;
+	margin-left:10px;
+	border-bottom:2px solid #fff;  
+}
+
+.article_title
+{
+	position:absolute;
+	top:50%;
+	margin-left:10px;  
+}
+
+.article_title a
+{
+	font-size:.6em;
+	color:#fff; 
+}
+
+.article_title a:hover
+{
+	font-size:.8em;
+	color:#888;
+	text-decoration:none; 
+}
+
+@media (min-width:768px){
+	
+	.article_title a
+	{
+		font-size:.8em;
+	}
+
+}
+
+/**
+* FOOT SITE
+* ---------------------------------------------------------------
+*/
+
+footer
+{
+	background-color:#f2f2f2;
+	padding:3%; 
+}
+
+.foot_site p
+{
+	text-align:center;
+}
+
+
+
